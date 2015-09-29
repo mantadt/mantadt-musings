@@ -83,11 +83,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseContext\RallyCrawlerDbContext.cs" />
     <Compile Include="Models\Task.cs" />
     <Compile Include="Models\Team.cs" />
     <Compile Include="Models\TeamMapping.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Workspace.cs" />
+    <Compile Include="RallyAPIConnector.cs" />
     <Compile Include="Service1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -104,9 +106,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DbContext\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
